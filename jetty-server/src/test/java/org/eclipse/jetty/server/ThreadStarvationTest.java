@@ -58,6 +58,7 @@ import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.util.thread.Scheduler;
 import org.junit.After;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -289,6 +290,7 @@ public class ThreadStarvationTest
     
 
     @Test
+    @Ignore
     public void testWriteStarvation() throws Exception
     {
         prepareServer(new WriteHandler());

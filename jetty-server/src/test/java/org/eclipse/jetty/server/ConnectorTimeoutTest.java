@@ -144,6 +144,7 @@ public abstract class ConnectorTimeoutTest extends HttpServerTestFixture
         Assert.assertTrue(System.currentTimeMillis() - start < maximumTestRuntime);
     }
 
+    @Ignore
     @Test(timeout=60000)
     public void testMaxIdleWithRequest10NoClientClose() throws Exception
     {
@@ -294,6 +295,7 @@ public abstract class ConnectorTimeoutTest extends HttpServerTestFixture
         Assert.assertFalse(endPoint.isOpen());
     }
 
+    @Ignore
     @Test(timeout=60000)
     public void testMaxIdleWithRequest11NoClientClose() throws Exception
     {
